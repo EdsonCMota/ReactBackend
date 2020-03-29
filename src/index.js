@@ -8,6 +8,7 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
+
 // Tipos de Parametros:
 
 // Query Params: Parametros nomeados enviados na rota apos ? (filtros, paginação)
