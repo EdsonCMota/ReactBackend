@@ -3,9 +3,13 @@
 module.exports = {
 
   development: {
-    client: 'sqlite3',
+    client: 'mysql',
+    version: '5.7',
     connection: {
-      filename: './src/database/db.sqlite'
+      host : '127.0.0.1',
+      user : 'root',
+      password : 'Madone59',
+      database : 'react'
     },
     migrations: {
       directory: './src/database/migrations'
@@ -14,11 +18,13 @@ module.exports = {
   },
 
   staging: {
-    client: 'postgresql',
+    client: 'mysql',
+    version: '5.7',
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      host : '127.0.0.1',
+      user : 'root',
+      password : 'Madone59',
+      database : 'react'
     },
     pool: {
       min: 2,
@@ -30,11 +36,13 @@ module.exports = {
   },
 
   production: {
-    client: 'postgresql',
+    client: 'mysql',
+    version: '8.0.17',
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      host : '127.0.0.1',
+      user : 'root',
+      password : 'Madone59',
+      database : 'react'
     },
     pool: {
       min: 2,
